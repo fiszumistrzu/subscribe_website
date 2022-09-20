@@ -200,34 +200,7 @@
         <button class="botButton">
         <p class="txtIwantTo">I want to study faster and have fun</p>
         </button>
-        <script>
-            document.querySelector('.getButton').addEventListener('click', function(){
-                document.querySelector('#modal').style.display = "block"
-            })
-            document.querySelector('.botButton').addEventListener('click', function(){
-                document.querySelector('#modal').style.display = "block"
-            })
-            document.querySelector('#wylacz').addEventListener('click', function(){
-                document.querySelector('#modal').style.display = "none"
-                document.querySelector('.txtInvalidEmail').style.display = "none"
-            })
-
-            function checkEmail(inputEmail){
-                var email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-                if (inputEmail.match(email)){ 
-                    document.querySelector('.txtInvalidEmail').style.display = "none"
-                    alert('E-mail address has been saved!');
-                }
-                else{   
-                    document.querySelector('.txtInvalidEmail').style.display = "block"     
-                }
-            }
-            document.querySelector('.subButton').addEventListener('click', function(){
-                let inputEmail = document.querySelector("input").value
-                checkEmail(inputEmail);
-                document.querySelector("input").value = '';
-            })
-        </script>
+        <script src="script.js"></script>
     </div>
     <div id="background_green_circle_container" style="position: relative;">
         <div id="background_green_circle" style="height:100%; z-index:-1;"></div>
