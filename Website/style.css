@@ -248,7 +248,7 @@ button
 #notes{
     width: 1149px;
     margin: 0 auto;
-    background: url('./notebook.png') no-repeat -48px top;
+    background: url('images/notebook.png') no-repeat -48px top;
     background-size: 1149px auto;
     position: relative;
     z-index: 6;
